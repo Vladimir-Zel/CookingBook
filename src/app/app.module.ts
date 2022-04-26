@@ -4,25 +4,26 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
 import {HeaderComponent} from "./components/header/header.component";
 import {RecipesComponent} from './components/recipes/recipes.component';
-import {RecipesListComponent} from './components/recipes/recipe-list/recipes-list.component';
+import {RecipeListComponent} from './components/recipes/recipe-list/recipes-list.component';
 import {RecipeDetailComponent} from './components/recipes/recipe-detail/recipe-detail.component';
 import {RecipeItemComponent} from './components/recipes/recipe-item/recipe-item.component';
 import {ShoppingListComponent} from './components/shopping/shopping-list.component';
 import {ShoppingEditComponent} from './components/shopping/shopping-edit/shopping-edit.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     RecipesComponent,
-    RecipesListComponent,
+    RecipeListComponent,
     RecipeDetailComponent,
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent, HeaderComponent]
